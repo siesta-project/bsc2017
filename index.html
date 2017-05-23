@@ -12,6 +12,33 @@ title: BSC Tutorial
       to update the course files.
     </pre>
 
+    <h2>Graphics terminals</h2>
+    <pre>
+      If you are using a UNIX-derived system (Linux, MacOS),
+      it is quite convenient to use a pre-defined ssh configuration.
+      Follow these steps:
+
+      1. cd $HOME/.ssh 
+      2. (Edit the file named 'config' with your favorite editor,
+      to add the following stanza (with your number instead of 116 !):
+
+      #-------------
+      Host s116
+      Hostname nord1.bsc.es
+      User nct01116
+      Protocol 2
+      ForwardX11 true
+      ForwardX11Trusted true
+      #-------------
+
+      Afterwards you can just do:
+
+      ssh s116
+
+      to connect to your account, and to properly forward
+      the graphics data.
+    </pre>
+
   <li>
     <h2>Reference material</h2>
     <ul>
