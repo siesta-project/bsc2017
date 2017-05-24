@@ -3,55 +3,6 @@ layout: bsc
 title: BSC Tutorial
 ---
 <ul>
-  <li>
-    <h2>Account setup</h2>
-    <pre>
-      Login details have been provided in the course.
-      Once you have made the initial setup, you can
-      run the command 'tutorial_update' at any time
-      to update the course files.
-    </pre>
-
-    <h2>Graphics terminals</h2>
-    <pre>
-      If you are using a UNIX-derived system (Linux, MacOS),
-      it is quite convenient (and sometimes necessary to avoid
-      problems) to do the following:
-      
-      1. cd $HOME/.ssh 
-      2. (Edit the file named 'config' with your favorite editor,
-      to add the following stanza (with your number instead of 116 !):
-
-      #-------------
-      Host s116
-      HostName nord1.bsc.es
-      User nct01116
-      Protocol 2
-      ForwardX11 true
-      ForwardX11Trusted true
-      #-------------
-
-      Afterwards you can just do:
-
-      ssh s116
-
-      to connect to your account, and to properly forward
-      the graphics data.
-    </pre>
-
-    <li><h2>Fix for OpenGL support in the Mac's X11 server</h2>
-      <pre>
-	Some versions of the XQuartz programs in the Mac exhibit
-	an obscure bug that prevents the VESTA and XCrysden programs
-	to work when executed in the School's computers with a
-	remote display on the Mac.
-
-	The fix is to issue this command at the Mac's terminal:
-
-	defaults write org.macosforge.xquartz.X11 enable_iglx -bool true
-      </pre>
-    </li>
-  <li>
     <h2>Reference material</h2>
     <ul>
       <li><a href="http://personales.unican.es/junqueraj/siesta-tutorial.html">
