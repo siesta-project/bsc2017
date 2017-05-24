@@ -39,6 +39,17 @@ title: BSC Tutorial
       the graphics data.
     </pre>
 
+    <li><h2>Fix for OpenGL support in the Mac's X11 server</h2>
+      <pre>
+	Some versions of the XQuartz programs in the Mac exhibit
+	an obscure bug that prevents the VESTA and XCrysden programs
+	to work when executed in the School's computers with a
+	remote display on the Mac.
+
+	The fix is to issue this command at the Mac's terminal:
+
+	defaults write org.macosforge.xquartz.X11 enable_iglx -bool true
+	
   <li>
     <h2>Reference material</h2>
     <ul>
